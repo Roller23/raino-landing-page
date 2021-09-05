@@ -67,4 +67,27 @@ body {
   margin-left: 5px;
 }
 
+.screens-wrapper {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 100px auto;
+}
+.screens-wrapper .screen {
+  width: 60%;
+  display: block;
+  transition: 0.7s;
+}
+.screens-wrapper .screen.dynamic {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.screens-wrapper.animated .static {
+  transform: translate(-10%, -10%);
+}
+.screens-wrapper.animated .dynamic {
+  transform: translate(70%, 50%);
+}
+
 /*# sourceMappingURL=main.css.map */
